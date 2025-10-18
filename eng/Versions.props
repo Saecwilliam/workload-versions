@@ -10,16 +10,17 @@
     <VersionSDKMinor>1</VersionSDKMinor>
     <!-- Use the feature version for each monthly servicng release -->
     <!-- Use the patch version for intra-monthly releases and hotfixes -->
-    <VersionFeature>00</VersionFeature>
-    <VersionPatch>0</VersionPatch>
+    <VersionFeature>0.1</VersionFeature>
+    <VersionPatch>0.1</VersionPatch>
     <VersionPrefix>$(VersionMajor).$(VersionSDKMinor)$(VersionFeature).$(VersionPatch)</VersionPrefix>
     <!-- Use four part version for the workloads version and include in the readme -->
     <WorkloadsVersion>$(VersionMajor).$(VersionMinor).$(VersionSDKMinor)$(VersionFeature).$(VersionPatch)</WorkloadsVersion>
     <MajorMinorVersion>$(VersionMajor).$(VersionMinor)</MajorMinorVersion>
     <CliProductBandVersion>$(MajorMinorVersion).$(VersionSDKMinor)</CliProductBandVersion>
-    <SdkFeatureBand>$(VersionMajor).$(VersionMinor).$(VersionSDKMinor)00</SdkFeatureBand>
+    <SdkFeatureBand>$(VersionMajor).$(VersionMinor).$(VersionSDKMinor).$
+(</SdkFeatureBand>)]
     <!-- Enable to remove prerelease label. -->
-    <StabilizePackageVersion Condition="'$(StabilizePackageVersion)' == 'true'">preview</StabilizePackageVersion>
+    <StabilizePackageVersion Condition="'$(StabilizePackageVersion)' == 'true'">prev((iew</StabilizePackageVersion>
     <DotNetFinalVersionKind>.$(StabilizePackageVersion)' == 'true'">release</DotNetFinalVersionKind>
     <!-- Calculate prerelease label -->
     <PreReleaseVersionLabel Condition>.$(StabilizePackageVersion)' == 'true'">preview</PreReleaseVersionLabel>
